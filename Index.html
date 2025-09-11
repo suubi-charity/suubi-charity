@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suubi Charity Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Roboto',sans-serif; line-height:1.6; background:#f7f7f7; color:#333; }
+        a { text-decoration:none; color:inherit; }
+        header { background:#4CAF50; color:white; padding:20px 0; }
+        header .container { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto; padding:0 20px; }
+        header h1 { font-size:2rem; }
+        nav a { margin-left:20px; font-weight:bold; }
+        .hero { background:url('https://images.unsplash.com/photo-1609942043627-bb20c2693017?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; height:70vh; display:flex; justify-content:center; align-items:center; color:white; text-align:center; padding:0 20px; }
+        .hero h2 { font-size:3rem; margin-bottom:20px; text-shadow:2px 2px 6px rgba(0,0,0,0.6); }
+        .hero p { font-size:1.2rem; text-shadow:1px 1px 4px rgba(0,0,0,0.6); }
+        section { max-width:1200px; margin:50px auto; padding:0 20px; }
+        .section-title { text-align:center; margin-bottom:40px; font-size:2rem; color:#4CAF50; }
+        .cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+        .card { background:white; padding:20px; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.2s; }
+        .card:hover { transform:translateY(-5px); }
+        .card h3 { margin-bottom:15px; color:#333; }
+        .card p { font-size:1rem; color:#666; }
+        footer { background:#333; color:white; text-align:center; padding:30px 20px; }
+        .btn { display:inline-block; padding:10px 25px; background:#4CAF50; color:white; border-radius:6px; margin-top:15px; transition:background-color 0.3s; }
+        .btn:hover { background:#45a049; }
+        form { max-width:600px; margin:auto; display:flex; flex-direction:column; gap:15px; }
+        input, textarea { padding:10px; border-radius:6px; border:1px solid #ccc; font-size:1rem; }
+        input[type="submit"] { background:#4CAF50; color:white; border:none; cursor:pointer; transition:background 0.3s; }
+        input[type="submit"]:hover { background:#45a049; }
+        .stories { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+        .story img { width:100%; border-radius:12px; }
+        @media(max-width:768px) { header .container { flex-direction:column; } nav a { margin-left:0; margin-top:10px; } .hero h2 { font-size:2.2rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Suubi Charity Foundation</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#programs">Our Work</a>
+            <a href="#donate">Donate</a>
+            <a href="#stories">Stories</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Caring for Abandoned Children & Needy Families</h2>
+        <p>Bring hope, love, and support to vulnerable lives.</p>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Suubi Charity Foundation is dedicated to supporting abandoned children and underprivileged families. Through shelter, education, nutrition, and healthcare, we aim to restore hope, provide care, and create opportunities for a better future.
+    </p>
+</section>
+
+<section id="programs">
+    <h2 class="section-title">Our Programs</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Child Shelter & Care</h3>
+            <p>Providing safe homes, nutritious meals, emotional support, and a loving environment for abandoned and vulnerable children.</p>
+        </div>
+        <div class="card">
+            <h3>Education & Skills Training</h3>
+            <p>Supporting children's education with school supplies, scholarships, and life skills training for long-term empowerment.</p>
+        </div>
+        <div class="card">
+            <h3>Support for Needy Families</h3>
+            <p>Helping families with food, healthcare, and income-generating projects to reduce poverty and improve quality of life.</p>
+        </div>
+    </div>
+</section>
+
+<section id="donate">
+    <h2 class="section-title">Donate</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Your donation can change a life. Help us provide shelter, education, and hope to abandoned children and struggling families.
+    </p>
+    <div style="text-align:center;">
+        <a href="#" class="btn">Donate Now</a>
+    </div>
+</section>
+
+<section id="stories">
+    <h2 class="section-title">Success Stories</h2>
+    <div class="stories">
+        <div class="story">
+            <img src="https://images.unsplash.com/photo-1608767564671-2abff7d9a0fc?auto=format&fit=crop&w=800&q=80" alt="Happy child">
+            <h3>James Found a Home</h3>
+            <p>James was abandoned at birth, but now he attends school and enjoys a loving home.</p>
+        </div>
+        <div class="story">
+            <img src="https://images.unsplash.com/photo-1619634553255-cf2bb8246a6f?auto=format&fit=crop&w=800&q=80" alt="Smiling girl">
+            <h3>Amina Receives Education</h3>
+            <p>Amina had no access to school, but through our support, she is now excelling academically.</p>
+        </div>
+    </div>
+</section>
+
+<section id="volunteer">
+    <h2 class="section-title">Volunteer With Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">Join our team and make a direct impact on the lives of children and families in need.</p>
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" rows="4" placeholder="Why do you want to volunteer?" required></textarea>
+        <input type="submit" value="Sign Up">
+    </form>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Reach out to us for volunteering, partnerships, or support inquiries.
+    </p>
+    <div style="text-align:center; margin-top:20px;">
+        <p>Email: info@suubi.org | Phone: +123 456 7890</p>
+        <p>Address: 123 Hope Street, Kampala, Uganda</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Suubi Charity Foundation. All rights reserved.</p>
+</footer>
+
+</body>
+  </html>
